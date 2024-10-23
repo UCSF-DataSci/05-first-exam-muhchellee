@@ -17,25 +17,18 @@ def complement(sequence):
         'C': 'G',
         'G': 'C'
     }
-    
     return ''.join(complement_map[base] for base in sequence.upper())
 
-#print(complement('CCTCAGC'))
-#print(complement('cctagc'))
 
 # return the reverse of a DNA sequence
 def reverse(sequence):
     return sequence[::-1].upper()  
 
-#print(reverse('CCTCAGC'))
-#print(reverse('cctagc'))
 
 # return the reverse complement of a DNA sequence
 def reverse_complement(sequence):
     return reverse(complement(sequence))
 
-#print(reverse_complement('CCTCAGC'))
-#print(reverse_complement('cctagc'))
 
 def main():
     # setting up command-line arguments
