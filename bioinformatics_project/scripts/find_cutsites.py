@@ -16,7 +16,6 @@ def read_fasta(file_path):
     with open(file_path, 'r') as fasta_file:
         dna_sequence = ''.join(line.strip() for line in fasta_file)
     return dna_sequence
-#print(read_fasta('AGTC \n ATGR'))
 
 
 # find all occurences of specified cut site in DNA sequence
@@ -31,6 +30,7 @@ def find_cut_sites(dna_sequence, cut_site):
     # search for cut site in sequence
     while True:
         start = dna_sequence.find(cut_site.replace('|', ''), start)
+        
         if start == -1:
             break
 
@@ -38,7 +38,6 @@ def find_cut_sites(dna_sequence, cut_site):
         start += len(cut_site_length)
 
     return positions
-#print(find_cut_sites('AAGGGATCCTT', 'G|GATCC'))
 
 
 # find all pairs of cut site locations that are 80-120 kbp apart
