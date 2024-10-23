@@ -1,3 +1,7 @@
+"""
+This is a script to generate a random DNA sequence and saves it in FAST format.
+"""
+
 import random 
 import textwrap
 import os
@@ -16,6 +20,7 @@ def save_to_fasta(sequence, file_path):
     with open(file_path, 'w') as fasta_file:
         fasta_file.write(formatted_sequence + '\n')
 
+
 def main():
     # generating random DNA sequence of 1 mill BPS
     dna_sequence = generate_dna_seq(1000000)
@@ -29,6 +34,7 @@ def main():
     save_to_fasta(dna_sequence, output_file)
 
     print(f"Random DNA sequence generated and saved to {output_file}")
+
 
 if __name__ == "__main__":
     main()
