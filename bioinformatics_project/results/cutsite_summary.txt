@@ -1,0 +1,9 @@
+Analyzing cut site: G|GATCC
+Total cut sites found: 225
+Cut site pairs 80-120 kbp apart: 1757
+First 5 pairs:
+1. 4161 - 93237
+2. 4161 - 95661
+3. 4161 - 96281
+4. 4161 - 97824
+5. 4161 - 100313
